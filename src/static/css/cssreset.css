@@ -1,0 +1,287 @@
+@charset "utf-8";
+html {
+    font-size: 125%;
+}
+/* @media screen and (max-height:660px) {
+    .somestyle{
+  height: 8.5rem;  
+  overflow:auto
+}
+} */
+@media screen and (min-width:310px) and (max-width:365px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media screen and (min-width:355px) and (max-width:400px) {
+    html {
+        font-size: 125%
+    }
+}
+
+@media screen and (min-width:420px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /*transition: all .3s ease;*/
+    moz-user-select: auto;
+    -moz-user-select: auto;
+    -o-user-select: auto;
+    -khtml-user-select: auto;
+    -webkit-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    /*使页面内容不可选*/
+}
+
+h3 {
+    margin: 0;
+}
+
+a,
+a:active,
+a:hover,
+img,
+button,
+input,
+textarea,
+* {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+/*消除手机点击时的阴影*/
+
+input::-ms-clear {
+    display: none;
+}
+
+
+/*消除ie10以上表单清除内容按钮*/
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/*消除ie10以上下拉框的箭头*/
+
+html {
+    -webkit-text-size-adjust: none;
+    /*禁用Webkit内核浏览器的文字大小调整功能但会使页面失去缩放功能。*/
+    text-rendering: optimizelegibility;
+    /**/
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", arial, SimSun, "微软雅黑", sans-serif;
+}
+
+* {
+    -webkit-text-size-adjust: auto !important;
+}
+
+
+/*打开缩放功能*/
+
+a {
+    color: #333;
+    cursor: pointer;
+    background-color: transparent;
+    /*消除ie10灰色背景*/
+    outline: none;
+    /*消除火狐虚线*/
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background: #ededed;
+    font-weight: 100;
+}
+
+table th,
+td {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+}
+
+button,
+input,
+textarea,
+select {
+    resize: none;
+    outline: none;
+    line-height: normal;
+    /* 让 input 和 button 一样高 */
+    background: #fff;
+}
+
+ul {
+    margin-bottom: 0!important;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, "Microsoft YaHei", arial, SimSun, "微软雅黑", sans-serif;
+    font-size: 14px;
+}
+
+input {
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding-left: 3%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a,
+a:focus,
+button {
+    outline: none;
+    /*ie8点击时出现的虚线框*/
+    text-decoration: none;
+}
+
+tr.check {
+    background: #EBF3FB!important;
+}
+
+
+/*为了ie8的下来箭头协调一点，去掉箭头改为添加背景*/
+
+select {
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    /*appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;/
+	
+     background: url(../img/72.jpg) right no-repeat;*/
+}
+
+img {
+    border: none;
+}
+
+em {
+    font-style: inherit;
+}
+
+b {
+    font-weight: 100;
+}
+
+
+/* 统一上标和下标 */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+:root sub,
+ :root sup {
+    vertical-align: baseline;
+    /* for ie9 and other modern browsers */
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/*iframe 兼容处理*/
+
+
+/*在ie8会有内阴影和留白，在行内加上frameborder=no border=0即可，并加上兼容的js文件	*/
+
+.fl {
+    display: inline;
+    float: left;
+}
+
+.fr {
+    display: inline;
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.nobor {
+    border: none!important;
+}
+
+.dlb {
+    display: inline-block;
+    *display: inline;
+    float: left;
+}
+
+.db {
+    display: block;
+}
+
+.ta-center {
+    text-align: center!important;
+}
+
+.mb0 {
+    margin-bottom: 0!important;
+}
+
+.pos-r {
+    position: relative;
+}
+.zzc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*在input里不要使用line-height，可用padding 代替*/
+
+
+/*引入字体*/

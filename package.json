@@ -1,0 +1,38 @@
+{
+  "name": "zhsq",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "dayjs": "^1.8.24",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "qrcodejs2": "0.0.2",
+    "register-service-worker": "^1.7.1",
+    "vant": "^2.6.0",
+    "vee-validate": "^2.0.0-rc.25",
+    "vue": "^2.6.11",
+    "vue-amap": "^0.5.10",
+    "vue-router": "^3.1.6",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-pwa": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
